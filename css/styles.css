@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow-x: hidden;
+}
+#parallax-container {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.parallax-layer {
+  position: relative;
+  height: 100vh;
+  transform-style: preserve-3d;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+}
+#layer1 {
+  background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
+  transform: translateZ(-1px) scale(2);
+}
+#layer2 {
+  background: linear-gradient(to bottom, #2c5364, #203a43, #0f2027);
+  transform: translateZ(-0.5px) scale(1.5);
+}
+nav {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 10;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
