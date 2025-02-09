@@ -3,6 +3,8 @@ body {
   font-family: Arial, sans-serif;
   overflow-x: hidden;
 }
+
+/* Parallax effect on home page */
 #parallax-container {
   perspective: 1px;
   height: 100vh;
@@ -40,4 +42,44 @@ nav a {
   text-decoration: none;
   color: white;
   font-weight: bold;
+}
+
+/* Cyberpunk style buttons */
+.cyberpunk-button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+  color: #00ffcc;
+  background-color: #1a1a1a;
+  border: 2px solid #00ffcc;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.cyberpunk-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, transparent, #00ffcc, transparent);
+  transition: all 0.3s ease;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cyberpunk-button:hover {
+  color: #1a1a1a;
+  background-color: #00ffcc;
+}
+
+.cyberpunk-button:hover::before {
+  opacity: 1;
+  transform: scale(1.2);
 }
