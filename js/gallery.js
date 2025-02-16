@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const galleryContainer = document.getElementById("gallery");
 
   // Define the number of days with pictures
-  const totalDays = 2; // Adjust based on how many days you have
+  const totalDays = 5; // Adjust based on how many days you have
 
   for (let day = 1; day <= totalDays; day++) {
       // Create a day container
